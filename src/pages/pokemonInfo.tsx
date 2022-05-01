@@ -13,7 +13,7 @@ type Params = {
     }
 }
 
-const PokemonInfo: React.FC<Params> = (props) =>{
+const PokemonInfo: React.FC = (props:Params) =>{
     const pokemon = JSON.parse(props.router.query.pokemon);
 
     return (
